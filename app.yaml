@@ -1,0 +1,16 @@
+runtime: python37
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: auto
+
+env_variables:
+  FLASK_DEBUG: '1'
+  FLASK_APP: "app"
+  MYSQL_USER: "travelrec" 
+  MYSQL_PASSWORD: "team26"
+  MYSQL_DB: "test"
+  MYSQL_HOST: "34.94.4.33"
